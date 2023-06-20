@@ -1,0 +1,11 @@
+# Exclude python environment
+.venv
+
+# Exclude data folder
+data
+
+# Exclude pycache
+__pycache__
+
+# Exclude environment files
+.env

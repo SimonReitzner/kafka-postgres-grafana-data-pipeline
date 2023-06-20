@@ -1,0 +1,19 @@
+apiVersion: 1
+deleteDatasources: []
+datasources:
+  - name: PostgreSQL
+    type: postgres
+    user: postgres
+    database: kafka_shops
+    url: postgres:5432
+    basicAuth: false
+    isDefault: true
+    editable: true
+    secureJsonData:
+      password: postgres
+    jsonData:
+      sslmode: disable
+      maxOpenConns: 0
+      maxIdleConns: 2
+      connMaxLifetime: 14400
+      postgresVersion: 1400
